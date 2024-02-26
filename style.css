@@ -2,9 +2,298 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
   font-family: Lato, 'Lato Fallback';
 }
 
 body {
   background-color: black;
+}
+:root {
+  /* colores border */
+  --btn-border-color: rgba(0, 0, 0, 0);
+  --btn-border-r-color: var(--btn-border-color);
+  --btn-border-l-color: var(--btn-border-color);
+  /*anchura de los border */
+  --btn-border-b-width: var(--btn-border-width);
+  --btn-border-width: 3px;
+  /* radio de los border */
+  --btn-border-radius: 50px;
+  --btn-border-t-width: var(--btn-border-width);
+  --btn-border-tl-radius: var(--btn-border-radius);
+  --btn-border-br-radius: var(--btn-border-radius);
+  --btn-border-bl-radius: var(--btn-border-radius);
+  /* texto centrado */
+  --btn-text-align: center;
+  /* color del texto */
+  --btn-text-color: rgb(255, 255, 255);
+  --btn-text-color-secondary: rgb(205, 149, 117);
+  /* funciones texto  y botones */
+  --btn-bg-image: color rgb(1, 1, 1);
+  --btn-text-decoration: none;
+  --btn-text-font-weight: 700;
+  --btn-icon-color: rgb(247, 247, 247);
+  --btn-icon-fill: rgb(247, 247, 247);
+  --btn-icon-wrpr-display: none;
+  /* efectos hover */
+  --btn-hover-border-b-color: var(--btn-hover-border-color);
+  --btn-hover-bg: rgb(255, 255, 255);
+  --btn-hover-border-t-color: var(--btn-hover-border-color);
+  --btn-hover-border-r-color: var(--btn-hover-border-color);
+  --btn-hover-border-l-color: var(--btn-hover-border-color);
+  --btn-hover-border-color: rgb(112, 93, 59);
+  --btn-hover-text-color: rgb(112, 93, 59);
+  --btn-hover-text-font-weight: var(--btn-text-font-weight);
+  --btn-hover-text-decoration: var(--btn-text-decoration);
+  --btn-hover-text-font-style: var(--btn-text-font-style);
+}
+header {
+  display: flex;
+  justify-content: center;
+  width: auto;
+  height: auto;
+  padding: 2.5px 40px;
+}
+a {
+  color: var(--btn-text-color);
+}
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  padding: 0 100px;
+}
+ul li {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  justify-content: center;
+  width: fit-content;
+  padding: 0 40px;
+  font-size: 1rem;
+  font-weight: 540;
+}
+main {
+  background-image: url(https://le-cdn.website-editor.net/s/77079d2da4584f389d52b486afc015f0/dms3rep/multi/opt/AdobeStock_444127880-1920w.jpeg?Expires=1709902264&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9sZS1jZG4ud2Vic2l0ZS1lZGl0b3IubmV0L3MvNzcwNzlkMmRhNDU4NGYzODlkNTJiNDg2YWZjMDE1ZjAvZG1zM3JlcC9tdWx0aS9vcHQvQWRvYmVTdG9ja180NDQxMjc4ODAtMTkyMHcuanBlZyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTcwOTkwMjI2NH19fV19&Signature=fs75yi8K6grh2EtJKnG51a9uruMxI3QaftbhspA7Jf55eGW~m8Ec9ngEAz2jvwBkShFAByvrQvFvvOIXw7CdW3oirDFEZQKBQJIBl06HgeEibe9TIoVE~Pn8BRoHemd9XHl97Lrz3MCW7ZkOhvvEdKB8drHUPO-~RaJmFVdd1Mmxwbal548hauCn27taqk9HgxIVxbEE6Ytv-yGvrD~S6P1vrWQIe3aJwQr155Ygie1MIWHCjAPbMw3ndf8rouDTC66OckLwl5FereoK0zmJolm6IczFX182ff7f-CHxIk1387jpIOkU9lpznmf-GcIXg7EXlBt7RLuObJYTp9wxog__&Key-Pair-Id=K2NXBXLF010TJW);
+}
+h2 {
+  color: var(--btn-hover-text-color);
+  font-size: 7rem;
+}
+h5 {
+  color: var(--btn-text-color-secondary);
+  font-size: 2rem;
+}
+button {
+  color: var(--btn-text-color);
+  border-style: none;
+  font-size: 25px;
+  padding: 20px 50px 20px 50px;
+}
+.brown {
+  background-color: var(--btn-hover-text-color);
+  border-color: var(--btn-border-t-color);
+}
+.black {
+  color: var(--btn-bg-image);
+  background-color: var(--btn-bg-image);
+  padding: 15px;
+}
+.black:hover {
+  background-color: black;
+  color: var(--btn-text-color);
+  border-radius: var(--btn-hover-text-color);
+}
+.brown:hover {
+  background-color: var(--btn-icon-color);
+  color: var(--btn-hover-text-color);
+}
+main {
+  display: flex;
+  width: 100% !important;
+  height: 770px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-direction: column;
+}
+.yerba {
+  font: 60px 'bebas neue fallbacks';
+  font-weight: 900;
+  font-style: inherit;
+}
+.bebida {
+  font: 30px 'bebas neue fallbacks';
+  font-weight: 600;
+  font-style: inherit;
+}
+main .black {
+  margin-top: 20px;
+}
+.nuestra h2 {
+  display: flex;
+  color: var(--btn-text-color);
+  font-size: 40px;
+}
+.texto {
+  display: flex;
+  color: var(--btn-text-color);
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: center;
+  align-self: center;
+  max-width: 440px;
+  gap: 25px;
+}
+.nuestra img {
+  display: flex;
+  justify-content: flex-start;
+  max-width: 100%;
+  max-height: 550px;
+  padding: 40px;
+  padding-left: 30px;
+}
+.imagen {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+}
+.nuestra {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  flex-direction: row-reverse;
+}
+.marcas {
+  background-color: white;
+  width: 100%;
+  height: 770px;
+  display: flex;
+  justify-content: space-around;
+}
+.laboutiquedelmate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  align-self: center;
+  max-width: 440px;
+  gap: 25px;
+}
+.pone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  align-self: center;
+  max-width: 440px;
+  gap: 25px;
+}
+.elixir {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  align-self: center;
+  max-width: 440px;
+  gap: 25px;
+}
+img:hover {
+  transform: scale(1.1);
+}
+
+p {
+  display: flex;
+  font-weight: 500;
+  font-size: 20px;
+  padding-bottom: 15px;
+}
+.secondary {
+  display: flex;
+  justify-content: center;
+  background-color: #a49292;
+}
+.quien {
+  display: flex;
+  background-color: white;
+  padding: 20px;
+}
+.nosotros {
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 15%;
+}
+.contact {
+  display: flex;
+  background-image: url(https://www.expoagro.com.ar/wp-content/uploads/high-angle-tea-cup-preparation-scaled.jpg);
+  background-size: cover;
+  height: 800px;
+  opacity: 0.7;
+  background-color: #ffffff;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  position: relative;
+}
+.especial {
+  color: black;
+  font-size: 30px;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  max-width: 800px;
+  gap: 20px;
+  padding: 10px;
+}
+input {
+  height: 35px;
+}
+textarea {
+  width: 400px;
+  height: 100px;
+}
+footer {
+  height: 350px;
+  display: grid;
+  background-color: #7e7b75;
+  align-content: center;
+  align-items: center;
+  grid-template-areas: 'pie enlaces direccion news';
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 10px;
+}
+.pie {
+  grid-area: pie;
+  padding-left: 30px;
+}
+.enlaces {
+  grid-area: enlaces;
+  display: flex;
+  flex-direction: column;
+}
+.direccion {
+  display: flex;
+  flex-direction: column;
+  grid-area: direccion;
+}
+.news {
+  display: flex;
+  flex-direction: column;
+  grid-area: news;
 }
