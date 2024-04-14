@@ -79,7 +79,10 @@ ul li {
   font-weight: 540;
 }
 main {
-  background-image: url(https://le-cdn.website-editor.net/s/77079d2da4584f389d52b486afc015f0/dms3rep/multi/opt/AdobeStock_444127880-1920w.jpeg?Expires=1709902264&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9sZS1jZG4ud2Vic2l0ZS1lZGl0b3IubmV0L3MvNzcwNzlkMmRhNDU4NGYzODlkNTJiNDg2YWZjMDE1ZjAvZG1zM3JlcC9tdWx0aS9vcHQvQWRvYmVTdG9ja180NDQxMjc4ODAtMTkyMHcuanBlZyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTcwOTkwMjI2NH19fV19&Signature=fs75yi8K6grh2EtJKnG51a9uruMxI3QaftbhspA7Jf55eGW~m8Ec9ngEAz2jvwBkShFAByvrQvFvvOIXw7CdW3oirDFEZQKBQJIBl06HgeEibe9TIoVE~Pn8BRoHemd9XHl97Lrz3MCW7ZkOhvvEdKB8drHUPO-~RaJmFVdd1Mmxwbal548hauCn27taqk9HgxIVxbEE6Ytv-yGvrD~S6P1vrWQIe3aJwQr155Ygie1MIWHCjAPbMw3ndf8rouDTC66OckLwl5FereoK0zmJolm6IczFX182ff7f-CHxIk1387jpIOkU9lpznmf-GcIXg7EXlBt7RLuObJYTp9wxog__&Key-Pair-Id=K2NXBXLF010TJW);
+  background-image: url(https://le-cdn.website-editor.net/s/77079d2da4584f389d52b486afc015f0/dms3rep/multi/opt/AdobeStock_444127880-1920w.jpeg?Expires=1713462881&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9sZS1jZG4ud2Vic2l0ZS1lZGl0b3IubmV0L3MvNzcwNzlkMmRhNDU4NGYzODlkNTJiNDg2YWZjMDE1ZjAvZG1zM3JlcC9tdWx0aS9vcHQvQWRvYmVTdG9ja180NDQxMjc4ODAtMTkyMHcuanBlZyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTcxMzQ2Mjg4MX19fV19&Signature=fQi1FYaZQqfp1HQTGYWGd64xLHTGXUZM~UPGGzBAI9rbvWPYiVtOxug11p6FfN41lecGCoMCM28SH9De1oa-ey3SWRCjF1-0CmHwS4mnPT0qHHkqrRh3wkSFwg780jq5BmbeGufkRFtqNqCjrywHKln1NJGqURc4Q-aBRdUPnceHjfZxDkP1y-prf~LMjNfFydTKr~i9~aDdFwHtW-JbqrHEybWuHaflh0wTnC5A-e6T-Ne46uiIzpsJ3wtrlgzMKpzVyRxAHiAiRZe3idzffOLciNt2VE-3L4tGiS-ECaYm~Ox-aexsJeEJ69TQgyz801TdXZTTxqlHCxumIzLBrw__&Key-Pair-Id=K2NXBXLF010TJW);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 h2 {
   color: var(--btn-hover-text-color);
@@ -296,4 +299,53 @@ footer {
   display: flex;
   flex-direction: column;
   grid-area: news;
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  ul.nav  {
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    height: max-content;
+    
+  }
+  main {
+    display: none;
+    
+  }
+  
+  .nuestra {
+    display: grid;
+    grid-template-columns: 1fr;
+  
+}
+.marcas {
+  display: grid;
+  grid-template-columns: 1fr;
+  height: auto;
+}
+.secondary {
+  display: none;
+}
+.quien {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: fit-content;
+}
+.quien img {
+  width: 100%;
+}
+footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: 'pie'
+                     'enlaces'
+                     'direccion'
+                     'news'; ;
+height: fit-content;
+}
 }
