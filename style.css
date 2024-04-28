@@ -248,6 +248,8 @@ p {
   flex-direction: column;
   gap: 30px;
   position: relative;
+  color: white;
+  
 }
 .especial {
   color: black;
@@ -328,6 +330,7 @@ footer {
   display: grid;
   grid-template-columns: 1fr;
   height: auto;
+  
 }
 .secondary {
   display: none;
@@ -366,4 +369,29 @@ height: fit-content;
 p {
   font-size: 15px;
 }
+}
+@media screen and (max-width: 1105px) {
+  .marcas {
+display: flex;
+  flex-direction: column;
+  height: auto;
+  }
+  .quien {
+    display: flex;
+  flex-direction: column;
+  height: auto;
+  }
+  footer {
+    display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        'pie'
+        'enlaces'
+        'direccion'
+        'news';
+        height: fit-content;
+  }
+  .secondary {
+    display: none;
+  }
 }
